@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /*background-color: #333;  
+    color: #fff; */     
+}
+#myChart{
+    margin: 100px 1000px 100px 100px;
+    background-color: #330;
+}
+
+
+.cols-2{
+    margin: 0px 100px 100px 100px;
+    background-color: rgb(148, 148, 141);
+}
+.cols-1{
+    margin: 200px ;
+    background-color: #330;
+}
