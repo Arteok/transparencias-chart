@@ -4,19 +4,18 @@
 body{
     margin: 0;
     /*background-color: #333;  
-    color: #fff; */     
+    color: #fff;  */  
 }
 #myChart{
     margin: 100px 1000px 100px 100px;
-    background-color: #330;
+    /*background-color: #330;*/
 }
-
-
+.cols-1{
+    margin: 0px 200px ;
+    background-color: #333;
+    color: #fff;
+}
 .cols-2{
     margin: 0px 100px 100px 100px;
     background-color: rgb(148, 148, 141);
-}
-.cols-1{
-    margin: 200px ;
-    background-color: #330;
 }

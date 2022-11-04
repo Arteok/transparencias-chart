@@ -15,28 +15,33 @@
 <body>
 
     <main>
-        <h1>Evolución de gasto</h1>
-        <p>Evolución del gasto por ejercicio</p> 
+        <h1>Evolución de gasto</h1>        
         <hr>
-        <section class="cols-2">
-            <figure>
-                <h2>Comparativa de modelos</h2>
-                <canvas id="modelsChart"></canvas>
-            </figure>
+        <div>
+            <section class="cols-1">
+                <figure>
+                    <h2>Evolución del gasto por ejercicio</h2>
+                    <canvas id="modelsChart"></canvas>
+                </figure>            
+            </section>
+        </div>
+        <div>
+            <section class="cols-2"></section>
+                <figure>
+                    <h2>Comparativa de características:
+                        <select id="featuresOptions">
+                            <option value="height">Altura (m)</option>
+                            <option value="length">Longitud (m)</option>
+                            <option value="height">Velocidad (km/h)</option>
+                        </select>
+                    </h2>
+                    <canvas id="featuresChart"></canvas>
+                </figure>
+            </section>
+        </div>
+        
 
-            <figure>
-                <h2>Comparativa de características:
-                    <select id="featuresOptions">
-                        <option value="height">Altura (m)</option>
-                        <option value="length">Longitud (m)</option>
-                        <option value="height">Velocidad (km/h)</option>
-                    </select>
-                </h2>
-                <canvas id="featuresChart"></canvas>
-            </figure>
-        </section>
-
-        <section class="cols-1">
+        <section class="cols-3">
             <figure>
                 <h2>Construcciones por año</h2>
                 <canvas id="yearsChart" height="300px"></canvas>
