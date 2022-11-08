@@ -1,66 +1,43 @@
 Chart.defaults.color = '#fff'
+Chart.defaults.borderColor = '#444'
 
 const printCharts = () => {
-    /*fetchCoastersData('https://coasters-api.herokuapp.com','https://coasters-api.herokuapp.com/country/Spain')
-    .then(([allCoasters, nationalCoasters]) => {
-            console.log(allCoasters, nationalCoasters)
-    })   */
-    renderModelsChart()
+ 
+    evolucionGastoChart();
 }
-const renderModelsChart = () => {
+const evolucionGastoChart = () => {
 
-    const labels = [
-        '2016',
-        '2017',
-        '2018',
-        '2019',
-        '2020',
-        '2021',
-        '2022'
-      ];
+    const labels = ['2016','2017','2018','2019','2020','2021','2022'];
+    
 
     const data = {
         labels: labels,
-        datasets: [{
-            /*data: ['244.723.536,03','347.500.534,51', 20,30],*/
-            data: [100,200,150, 220,280,133,128],
-            borderColor: getDataColors(),
-            backgroundColor: getDataColors(40)
-            
-            //borderColor: ['red', 'green', 'blue'],
-            //backgroundColor: ['blue', 'green', 'red']
+        datasets: [{            
+            data: [ 244723536.03 , 347500534.51 , 474177336.83, 702075438.61 , 950338438.19 , 1412071677.24 , 1110284555.16],
+            tension: .5,//es para suavizar el grafico
+            borderColor: getDataColors()[1],
+            backgroundColor: getDataColors(20)[1],
+            fill: true,//para que tenga color de fondo
+            pointBorderWidth: 5,
+            pointBorderColor: getDataColors()                
         }]    
     }
     const options = {
-        plugins: {
-            legend: { position: 'left'}//pone las barras a la izquierda
-        }
-    }
+      plugins: {
+          legend: { display: false }
+      }
+  }
 
-    new Chart('modelsChart',{type: 'line', data, options})//crea el tipo de grafico
+    new Chart('lineChart',{type: 'line', data, options})//crea el tipo de grafico
 }
+printCharts();
 
-printCharts()
+
 
 
   
   
-   /* const data = {
-      labels: labels,
-      datasets: [{
-        label: 'My First dataset',
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
-        data: [0, 10, 5, 2, 20, 30, 45],
-      }]
-    };*/
-  /*
-    const config = {
-      type: 'line',
-      data: data,
-      options: {}
-    };
-  */
+
 
 
   
