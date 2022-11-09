@@ -5,14 +5,13 @@
 }
 
 body {
-  background: #181f38;
-  font-family: 'Poppins', monospace;
-  color: white;
+  background: #ecf0f1; 
+  color: #000000;
   font-size: .7em;
   font-weight: 200;
   letter-spacing: 1px;
 }
-
+/*
 html {
   padding: 20px;
   font-weight: 300;
@@ -37,24 +36,31 @@ h2 {
     font-weight: 200;
 }
 
-
 hr {
     border-color: white;
     margin: 10px 0;
 }
-
+*/
 figure, canvas {
-    background-color: rgba(255,255,255,.03);
-   /* padding: 10px 10px 30px;*/
+    background-color: rgba(255, 2, 2, 0.05);
+    padding: 10px 10px 30px;
 }
 
 canvas {
     width: 100%;
 }
 
-/*
-/* grid */
+.div-1  > * {
+    width: 100%;
+    margin: 10px;
+    padding:  0 200px 200px 200px;
+    
+    
+}
 
+
+/* grid */
+/*
 [class*='cols'] {
     display: flex;
     flex-direction: row;
@@ -76,11 +82,15 @@ canvas {
     width: 50%;
     margin: 10px
 }
-
+*/
 
 @media  (max-width: 800px) {
 
-    main {
+    .div-1  > * {
+        width: 100%;               
+        
+    }
+    /*main {
         padding: 0;
     }
 
@@ -97,5 +107,5 @@ canvas {
 
     .cols-2 > * {
         width: 100%;
-    }
+    }*/
 }
