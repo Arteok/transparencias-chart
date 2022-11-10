@@ -13,7 +13,7 @@ const gastoxDependenciaChart = () => {
         datasets: [{
             data: [ 573942394.87 , 536342160.29],
             borderColor: getDataColors(),
-            backgroundColor: getDataColors(20)
+            backgroundColor: getDataColors(40)
         }]
     }
 
