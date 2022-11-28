@@ -1,6 +1,7 @@
 Chart.defaults.color = '#fff';
 Chart.defaults.borderColor = '#444';
 Chart.defaults.font.size = 16;
+
 const printCharts = () => {
  
     gastoxDependenciaChart();

@@ -10,11 +10,11 @@ const getCoastersByYear = (coasters, years) => {
     })
     return coastersByYear
 }
-
-const updateChartData = (chartId, data, label) => {
+/*-------------------------------------------------------*/
+/*const updateChartData = (chartId, data, label) => {
     const chart = Chart.getChart(chartId)
     chart.data.datasets[0].data = data
     chart.data.datasets[0].label = label
     chart.update()
 }
-
+*/
