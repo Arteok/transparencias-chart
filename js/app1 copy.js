@@ -8,10 +8,11 @@ const printCharts = () => {
 const gastoxDependenciaChart = () => {
 
     const labels = ['RECTORADO','INSTITUTOS'];
+    const valores = [ 573942394.87 , 536342160.29];
     const data = {
         labels: labels,
         datasets: [{
-            data: [ 573942394.87 , 536342160.29],
+            data: valores,
             borderColor: getDataColors(),
             backgroundColor: getDataColors(40)
         }]
